@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = {
   Proizvod: [
@@ -24,11 +25,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-xs font-bold text-white">
-                MC
-              </div>
-              <span className="font-bold text-gray-900">MyCameraBackup</span>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/logo.jpg"
+                alt="MyCameraBackup logo"
+                width={140}
+                height={80}
+                className="rounded-lg"
+              />
             </Link>
             <p className="mt-3 text-sm text-gray-500">
               Sigurno čuvajte vaše fotografije i video zapise u cloud-u. Dizajnirano za profesionalne fotografe.

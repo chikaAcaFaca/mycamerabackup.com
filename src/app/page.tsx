@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BreadcrumbSchema, FAQSchema } from "@/components/SchemaMarkup";
 import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
@@ -40,6 +41,14 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-36">
           <div className="mx-auto max-w-3xl text-center">
+            <Image
+              src="/logo.jpg"
+              alt="MyCameraBackup logo"
+              width={120}
+              height={120}
+              className="mx-auto mb-6 drop-shadow-lg"
+              priority
+            />
             <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blue-600">
               Backup fotografija za profesionalce
             </p>
@@ -312,6 +321,13 @@ export default function HomePage() {
       {/* ===== ACTION: Final CTA ===== */}
       <section className="bg-gradient-to-r from-blue-600 to-indigo-700 py-20 sm:py-28">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <Image
+            src="/logo.jpg"
+            alt="MyCameraBackup logo"
+            width={80}
+            height={80}
+            className="mx-auto mb-6 rounded-2xl bg-white/10 p-2 shadow-lg backdrop-blur-sm"
+          />
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Vaš MyCameraBackup je spreman
           </h2>

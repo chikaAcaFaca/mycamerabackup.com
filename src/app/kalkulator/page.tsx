@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { plans } from "@/lib/pricing-data";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 
@@ -68,6 +69,13 @@ export default function CalculatorPage() {
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <Image
+              src="/logo.jpg"
+              alt="MyCameraBackup logo"
+              width={80}
+              height={80}
+              className="mx-auto mb-6 drop-shadow-md"
+            />
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Kalkulator potrebnog prostora
             </h1>

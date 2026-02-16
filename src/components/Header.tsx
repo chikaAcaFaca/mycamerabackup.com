@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navLinks = [
@@ -20,9 +21,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600 text-sm font-bold text-white">
-            MC
-          </div>
+          <Image
+            src="/logo.jpg"
+            alt="MyCameraBackup logo"
+            width={40}
+            height={40}
+            className="rounded-lg"
+            priority
+          />
           <span className="text-lg font-bold text-gray-900">
             MyCameraBackup
           </span>

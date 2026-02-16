@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { plans, billingPeriods, type BillingPeriod } from "@/lib/pricing-data";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { usePaddle } from "@/hooks/usePaddle";
@@ -40,6 +41,13 @@ export default function PricingPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="mx-auto max-w-2xl text-center">
+            <Image
+              src="/logo.jpg"
+              alt="MyCameraBackup logo"
+              width={80}
+              height={80}
+              className="mx-auto mb-6 drop-shadow-md"
+            />
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
               Izaberite plan za vaše potrebe
             </h1>

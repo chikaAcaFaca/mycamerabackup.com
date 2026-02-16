@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/seo";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata.blog;
@@ -68,6 +69,13 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <Image
+            src="/logo.jpg"
+            alt="MyCameraBackup logo"
+            width={80}
+            height={80}
+            className="mx-auto mb-6 drop-shadow-md"
+          />
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
             Vodiči i Blog
           </h1>
